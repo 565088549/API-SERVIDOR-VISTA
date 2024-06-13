@@ -1,7 +1,7 @@
 
 async function fetchUsers() {
     try {
-        const response = await fetch('http://localhost:3000');
+        const response = await fetch('https://api-chat-1-eg56.onrender.com/');
         const users = await response.json();
         const usersDiv = document.getElementById('users');
         usersDiv.innerHTML = ''; // Limpiar el contenido anterior
@@ -28,7 +28,7 @@ async function addUser() {
     const nombre = document.getElementById('nombre').value;
     if (!nombre) return alert('Por favor ingrese un mensaje ');
     try {
-        const response = await fetch('http://localhost:3000', {
+        const response = await fetch('https://api-chat-1-eg56.onrender.com/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ async function addUser() {
 
 async function deleteUser(id) {
     try {
-        const response = await fetch('http://localhost:3000', {
+        const response = await fetch('https://api-chat-1-eg56.onrender.com/', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ function showEditUser(id, currentName) {
 
 async function editUser(id, nombre) {
     try {
-        const response = await fetch('http://localhost:3000', {
+        const response = await fetch('https://api-chat-1-eg56.onrender.com/', {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
