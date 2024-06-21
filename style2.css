@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body {
-    background-color: aliceblue;
+    background-color: rgb(203, 252, 200);
     font-family: Arial, sans-serif;
     text-align: left;
     cursor: pointer;
@@ -20,7 +20,7 @@ body {
     margin-right: 430px;
     border: 1px solid black ;
     border-radius: 10px;
-    box-shadow: 10px 5px 10px rgb(179, 231, 245);
+    box-shadow: 10px 5px 10px rgb(99, 255, 107);
 }
 
 label {
@@ -41,7 +41,7 @@ div{
     padding-left: 10px;
     border: 1px solid black ;
     border-radius: 10px;
-    box-shadow: 10px 5px 10px rgb(179, 231, 245);
+    box-shadow: 10px 5px 10px rgb(99, 255, 107);
 }
 input{
     text-align: center;
@@ -50,7 +50,7 @@ input{
     margin-top: 0px;
     margin-bottom: 15px;
     padding: 10px;
-    border: 3px dashed #bedee7;
+    border: 3px dashed rgb(99, 255, 107);;
     left: 100px;
     border-radius: 50px;
     cursor: pointer;
